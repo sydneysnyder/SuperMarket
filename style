@@ -1,0 +1,206 @@
+#recipt{
+        box-shadow: 4px 4px 4px #808080;   
+}
+#div1{
+        box-shadow: 4px 4px 4px #808080;
+    background-color: chartreuse;
+}
+.masthead {
+  padding-top: 10px;
+  position: relative;
+}
+
+
+
+.logo {
+  font-size: 10px;
+  line-height: 1;
+  margin-bottom: -8px;
+  margin-top: 0;
+  text-align: left;
+}
+
+/* ::: Main Navigation ::: */
+.nav-main {
+  border-bottom: 1px solid green;
+  border-top: 5px solid green;
+  margin-bottom: 0;
+  padding: .5em 0em .5em;
+}
+
+.nav-main li {
+  border-left: 2px solid green;
+  display: inline-block;
+  text-align: left;
+}
+
+.nav-main li:first-child {
+  border-left: none;
+}
+
+.nav-main li:last-child a {
+  padding-right: 0;
+}
+
+.nav-main a {
+  color: black;
+  display: inline-block;
+  font-size: 1.125em; /* 18px/16px */
+  padding: .5em 1.15em .5em 1.4em;
+}
+
+.nav-main a:hover {
+  color: mediumvioletred;
+  text-decoration: overline;
+}
+
+.nav-main .current-page:hover {
+  color: mediumvioletred;
+  cursor: grab;
+}
+.hOne {
+font-size: 2em;
+    text-decoration: underline;
+    color: chartreuse;
+}
+.hTwo {
+font-size: 2em;
+    text-decoration: underline;
+    color: chartreuse;
+}
+table{
+    border-color: darkgreen;
+}
+th{
+   color: white;
+    background-color: green;
+    font-size: 1.5em;
+    font-style: italic;
+    font-variant: small-caps;
+}
+th:hover{
+ color: black;
+}
+td{
+padding: 1em;
+font-weight: bold;
+}
+tr:hover{
+    color: white;
+    font-weight: bolder;
+    background-color: blue
+}
+ tr:nth-child(odd) {
+    background-color: greenyellow;
+}
+legend{
+ color: darkred;
+    font-weight: bold;
+}
+fieldset{
+ border-color: orange;
+    border-style: dotted;
+    border-top: 3px dotted orange; 
+    background-color: antiquewhite;
+}
+.fieldsetTwo,.fieldsetFour{
+     border-color: orange;
+    border-style: dotted;
+    border-top: 3px dotted orange; 
+    background-color: cornsilk; 
+}
+.sidebar{
+  float: right;
+  margin-top: 1.5em;
+  width: 300px;
+  height: 580px;
+  border-top:4px solid red;
+border-bottom:2px solid red;
+background-color: aliceblue;
+  border-left: 2px solid red;
+      border-right: 2px solid red;
+
+}
+.sideBarImg{
+ padding-left: 3em;   
+}
+.sidebar p:first-letter{
+    font-variant: small-caps;
+    font-weight: bolder;
+}
+
+.sidebar p{
+    font-variant: small-caps;
+    font-weight: bolder;
+    padding-left: 2em;
+}
+.sidebar h2{
+    padding-left: 3em;
+}
+body{
+ background-color: aliceblue   
+}
+.Logo{
+    border:3px double green;
+}
+.addStatement{
+ font-family: monospace;   
+}
+.intro:first-letter{
+    font-weight: bolder;
+    font-size: 2.5em;
+}
+.intro{
+    font-size: 1.2em;
+}
+.button{
+ color: chartreuse;
+}
+.myButton {
+	-moz-box-shadow: 0px 0px 0px 2px #9fb4f2;
+	-webkit-box-shadow: 0px 0px 0px 2px #9fb4f2;
+	box-shadow: 0px 0px 0px 2px #9fb4f2;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7892c2), color-stop(1, #476e9e));
+	background:-moz-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+	background:-webkit-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+	background:-o-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+	background:-ms-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7892c2', endColorstr='#476e9e',GradientType=0);
+	background-color:#7892c2;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:10px;
+	padding:12px 30px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #476e9e), color-stop(1, #7892c2));
+	background:-moz-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+	background:-webkit-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+	background:-o-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+	background:-ms-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#476e9e', endColorstr='#7892c2',GradientType=0);
+	background-color:#476e9e;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+#myFooter{
+    width: inherit;
+    height: 200px;
+    border-radius:10px;
+    background-color: darkorange;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+}
