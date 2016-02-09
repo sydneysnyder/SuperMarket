@@ -1,0 +1,78 @@
+<head>
+    <link rel= "stylesheet" href="style.css">
+    <header class="masthead" role="banner">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="updateTotalDynamic.js"></script>
+
+    </header>
+
+   
+
+<style>
+#div1 {width:350px;height:350px;padding:10px;border:1px solid #aaaaaa;}
+</style>
+<script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+
+    $( "#recipt" ).append("<label>"+data.toUpperCase()+" added to cart</label> Enter Quantity:<input style=\"width:40px\"type=\"number\"value=\"1\"><br><br>"); 
+
+
+    document.getElementById("setItemID").value=data;
+        document.getElementById("opButton").click();
+
+}
+    function printDiv() {
+     var printContents = document.getElementById("recipt").innerHTML;
+     var originalContents = document.body.innerHTML;
+
+     document.body.innerHTML = printContents;
+
+     window.print();
+
+     window.location.assign("http://localhost/group/finalProject/assignmentOne.php");
+}
+
+</script>
+</head>
+<body>
+
+<p>Drag the Items into the shopping cart:</p>
+    <div id="recipt" style="float:right; padding-right:500;border:solid 2px black;width:500px;"><b>Recipt</b>
+        <br>
+            <img src="checkout.png" onClick="printDiv()" width="100px" height="100px" style="float:right;padding-top:300px ">
+
+        <img src="cancel.png" width="90px" height="90px" style="float:right;padding-top:300px ">
+        <p style="float:left;padding-top:300px;font-weight:bolder;font-size:2em;padding-right:10px; ">Transaction Total: </p> <p id="total" style="float:left;padding-top:300px;font-weight:bolder;font-size:2em; "> 0.0</p>
+
+    </div>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<img id="bananas" src="banana.png" draggable="true" ondragstart="drag(event)" width="100" height="100">
+<img id="apples" src="apples.png" draggable="true" ondragstart="drag(event)" width="100" height="100">
+<img id="mango" src="mango.png" draggable="true" ondragstart="drag(event)" width="100" height="100">
+<br>
+<br>
+<br>
+<form id="checkPrice"  action="updateTotal.php" method="post" style="display:none;">
+		<fieldset>
+			
+			<label>Item ID</label>
+                 <input id = "setItemID" type="text" name="draggedItemID" placeholder="Enter Item ID"/>
+			     <input id="opButton"class="button" type="button" value="Submit" />
+	
+		</fieldset>
+		</form>
+</body>
+</head>
