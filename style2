@@ -1,0 +1,179 @@
+.login{
+ border: 4px solid black;
+ background-color: lightgrey;
+    
+font-family: fantasy;
+font-style: oblique;
+    display: inline-block;
+    width: 390px;
+    height: 230px;    
+}
+.signup{
+     border: 4px solid white;
+ background-color: dodgerblue;
+font-family: fantasy;
+font-style: oblique;
+    display: inline-block;
+    width: 500px;
+    height: 330px;
+    border-radius: 1.3em;
+}
+
+label{
+font-family: fantasy;
+color: black;
+display: inline-block;
+    width: 100px;
+    text-align: left;
+    float: left;
+    padding-left: 10px;
+}
+
+input{
+     margin-top: 10px;
+   
+}
+
+
+
+.myButton {
+        margin-top: 25px;
+        font-weight: bolder;
+	-moz-box-shadow: 0px 0px 0px 2px #9fb4f2;
+	-webkit-box-shadow: 0px 0px 0px 2px #9fb4f2;
+	box-shadow: 0px 0px 0px 2px #9fb4f2;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7892c2), color-stop(1, #476e9e));
+	background:-moz-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+	background:-webkit-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+	background:-o-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+	background:-ms-linear-gradient(top, #7892c2 5%, #476e9e 100%);
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7892c2', endColorstr='#476e9e',GradientType=0);
+	background-color:#7892c2;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:10px;
+	padding:12px 30px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #476e9e), color-stop(1, #7892c2));
+	background:-moz-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+	background:-webkit-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+	background:-o-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+	background:-ms-linear-gradient(top, #476e9e 5%, #7892c2 100%);
+	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#476e9e', endColorstr='#7892c2',GradientType=0);
+	background-color:#476e9e;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+.myButton2 {
+    margin-top: 25px;
+    font-weight: bolder;
+	-moz-box-shadow: 0px 0px 0px 2px #f03030;
+	-webkit-box-shadow: 0px 0px 0px 2px #f03030;
+	box-shadow: 0px 0px 0px 2px #f03030;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #db4f4f), color-stop(1, #c41d26));
+	background:-moz-linear-gradient(top, #db4f4f 5%, #c41d26 100%);
+	background:-webkit-linear-gradient(top, #db4f4f 5%, #c41d26 100%);
+	background:-o-linear-gradient(top, #db4f4f 5%, #c41d26 100%);
+	background:-ms-linear-gradient(top, #db4f4f 5%, #c41d26 100%);
+	background:linear-gradient(to bottom, #db4f4f 5%, #c41d26 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#db4f4f', endColorstr='#c41d26',GradientType=0);
+	background-color:#db4f4f;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid #d62020;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:10px;
+	padding:12px 30px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e86a6a;
+}
+.myButton2:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c41d26), color-stop(1, #db4f4f));
+	background:-moz-linear-gradient(top, #c41d26 5%, #db4f4f 100%);
+	background:-webkit-linear-gradient(top, #c41d26 5%, #db4f4f 100%);
+	background:-o-linear-gradient(top, #c41d26 5%, #db4f4f 100%);
+	background:-ms-linear-gradient(top, #c41d26 5%, #db4f4f 100%);
+	background:linear-gradient(to bottom, #c41d26 5%, #db4f4f 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c41d26', endColorstr='#db4f4f',GradientType=0);
+	background-color:#c41d26;
+}
+.myButton2:active {
+	position:relative;
+	top:1px;
+}
+
+input{
+ border-radius: 10px; 
+ border: 2px solid black;
+    width: 200px;
+    height: 30px;
+}
+#imgButton{
+ border: none;
+  width: 120px;
+    height: 40px;
+}
+#signUpButton{
+ border: none;
+  width: 50px;
+    height: 50px;
+}
+input:focus{
+background-color: ghostwhite;
+box-shadow: 0 0 5px 1px #969696;
+}
+.createAccountForm{
+     border: 2px dotted blue;
+ background-color: aliceblue;
+font-family: fantasy;
+font-style: oblique;
+    display: inline-block;
+    width: 200px;
+    height: 400px;
+    position: fixed;
+}
+#myFooter{
+height: 200px;
+    position: absolute;
+    left:0px;
+    right: 0px;
+    bottom: -120px;
+width: auto;
+background-color: black;
+z-index: -1;
+           
+}
+
+ body {
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+}
+#slogan{
+font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 2em;
+    color: white;
+    
+}
