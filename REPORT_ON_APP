@@ -1,0 +1,71 @@
+Team Anonymous:
+Anthony Andrada, Ravi Sharma, & Sydney Snyder
+CS 174 Sec 02
+Ron Mak
+December 9, 2015
+Supermarket Application Report
+	Our application is a web application that allows a user to log into a grocery store system. The primary user of this web app is an 
+	employee of the supermarket. The user can add products to the cart to purchase all or some items or the user can input into a form to 
+	make purchase transactions items one at a time. The user can also use the query tab where they can search for items less than, greater 
+	than, or equal to a specific price or quantity. The user can also find items from a specific supplier. This application’s target user 
+	is a supermarket employee, who wishes to make transactions for the customers of the supermarket, and find out their profits made as 
+	well as supplier information.
+	When entering the application, the user is sent to a login screen where they can either login with their account information or create 
+	an account. First, the user must create an account, by clicking the “Create Account” button, which, when clicked, will display a drop 
+	down form, which is hidden until the button is clicked. The user will then fill out their information into the form. The program will 
+	display a green check or a red x depending on whether or not the user’s input it valid or in the desired format. This portion of the 
+	application uses JavaScript to check whether or not the information is in the correct format. Once it is correct, the form action is 
+	set and the form is submitted programmatically. The form then sends the data to the PHP file, which adds it to the database. Once 
+	successfully added and created, an alert box will appear displaying the generated Employee ID for the new user that they will need to 
+	enter the system. Then the user will be redirected to the login page. When logging in, the program will check whether or not the user’s 
+	information is correct as in the database, using PHP and MySQL to search into the database and verify information. If it is not 
+	validated, an error message will display using JavaScript, otherwise it will log the user into the system, sending them to the homepage 
+	using JavaScript window.location.
+	After logging in, the user will be sent to the homepage, which displays a table with the current items in the cart/database, which is 
+	updated using PHP and AJAX.  It also features the name of the user, displayed in the upper right corner next to the logout button. The 
+	user name that is logged in is stored as a SESSION Variable in PHP. The user can click on the first drop down menu, which is created 
+	using the hide feature and JavaScript, to add, create, or delete items into the cart.  If they choose to add an item, they must give 
+	all information about the item and it will be added to the database except the item id because that is auto generated at MySQL level. 
+	If user selects delete an item then they will only need to enter an item id, and the other form inputs will be hidden.  All of the 
+	actions done within this drop down menu use PHP and MySQL. The second drop down menu allows the user to purchase one item at a time in 
+	the database.  Doing so updates the quantity of the item that was purchased from the database using PHP and MySQL. The database is 
+	updated in real time with the page showing each item being added, removed, purchased, returned, or created as the user does it. Across 
+	the top of the homepage are different tabs that were created by AJAX. These tabs are for the homepage, queries, and shopping cart.
+	If the user clicks on the “Query” tab, the user enters a page displaying the query options. The user can choose to search for items 
+	that are less than, greater than, or equal to a specific price or quantity. The application will return a table displaying all the items
+	from the database that match the range of prices the user selected, which is accessed using MySQL and PHP. The user can also view the 
+	suppliers of specific items, which display in a table once the user searches. The table is brought up onto the screen using PHP, SQL, 
+	AJAX, Javascript, and HTML5, which keeps the database live. They can view all the purchases, returns, or transactions made for the 
+	supermarket. Then, they can view how much profit was made by the supermarket for a certain day or ranges of days, which is done using a 
+	function in PHP and MySQL, which allows the programmer to add up the sum of all the purchases or return made during the day or range of 
+	days selected. When pick the day, a calendar appears, which was created using JQuery. When the user clicks a date, it selects that date 
+	and enters it into the textbox. In the queries section, PHP prepared statements were used to prevent injections into our database to be
+	sure no one can access information that we do not wish for them to access.
+	Our application also features a drag and drop shopping cart, printable receipt, and slide on/off sidebar. The drag and drop shopping 
+	cart allows the user to drag specific item photos, with the options of bananas, mangos, and apples, into the cart to add the item into 
+	the data for the user’s receipt using PHP, SQL, and JQuery. For simplicity we only have images of these three items to be dragged and 
+	dropped. The item will appear on the receipt on the side, which allows the user to pick the quantity for the item. The receipt 
+	calculates the total for what the user had added to the cart. The user can then print the receipt, which uses the hide feature so the 
+	user can only see the receipt portion of the page as opposed to the full webpage, which in default would appear for printing. On the 
+	homepage, there are arrows where, when the user clicks, the sidebar with the website information slides in from the side. Clicking the
+	arrow again removes the sidebar from view. This application for the sidebar is made possible using JavaScript to slide the sidebar in 
+	and out. Another speacial feature we added was a calculator which we integrated in the Shopping Cart tab page. The calculator can be 
+	used by the employee to calculate the sales tax or to calculate how much change to give back to the customer. The code for the 
+	calculator is referenced from TheCodePlayer.com. This website supplies developers with demos and source codes of handy website plugins.
+	The application will return to the login page once the user clicks the logout button in the top right corner. The user can then re-login
+	or exit the page.
+	We encountered many difficulties with programming this website. All of us had little to no experience with databases or web design, so 
+	just getting started was difficult for us. One major difficulty included the fact that our computers didn’t always run the website the 
+	same. One of us would have the website perfect with the code, while the same code looked completely different on another person’s 
+	laptop. Usually the issue was with importing the database, so that solved most of those issues. Though syntax errors were easy to fix, 
+	when the error is the database or the links to files, such as JQuery UI links, it is hard to figure out that that is the issue in the 
+	code. Many times it took a while to sit and think about where the error was coming from, but most the times when it is figured out, it 
+	is easy to fix. Sometimes it isn’t as easy. 
+	Other more specific difficulties were found. We had issues with the JQuery that did the calendar when picking dates for the profits for 
+	the company. When the user would click one tab after clicking the calendar, and then go back to the calendar, the calendar would not 
+	display properly. One of us found that adding a line of code into the JQuery UI file fixed the problem. Another issue we had was with 
+	the prepared statements. The person who did them originally did them in a way where the table ended up not displaying when someone 
+	entered a SQL command into the query. This was fixed quickly when another person on our team fixed them to be a more exact mimic of the
+	ones provided to us as an example.
+Overall, this project was a great learning experience for all of. As all of us had almost no experience in web programming or databases, 
+we learned a lot about the topics and were capable of creating a dynamic web page after using information used in this class. Learning all these languages and strategies for programming in such a short period of time and being able to achieve such a dynamic web page was a great experience for us that will be extremely useful in our future endeavors.
