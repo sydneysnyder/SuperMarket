@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Ravis Supermarket</title>
+  <meta name="description" content="">
+  <meta name="author" content="Anonymous">
+
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+  <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel= "stylesheet" href="style.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<link href="jquery-ui-1.11.4.custom/jquery-ui.css" rel="stylesheet">
+<script src="jquery-ui-1.11.4.custom/external/jquery/jquery.js"></script>
+<script src="jquery-ui-1.11.4.custom/jquery-ui.js"></script>
+        <script src="dynamicTableTwo.js"></script>
+    <script src="dynamicEarnings.js"></script>
+
+
+    <style>
+	body{
+		font: 62.5% "Trebuchet MS", sans-serif;
+		margin: 50px;
+	}
+	.demoHeaders {
+		margin-top: 2em;
+	}
+	#dialog-link {
+		padding: .4em 1em .4em 20px;
+		text-decoration: none;
+		position: relative;
+	}
+	#dialog-link span.ui-icon {
+		margin: 0 5px 0 0;
+		position: absolute;
+		left: .2em;
+		top: 50%;
+		margin-top: -8px;
+	}
+	#icons {
+		margin: 0;
+		padding: 0;
+	}
+	#icons li {
+		margin: 2px;
+		position: relative;
+		padding: 4px 0;
+		cursor: pointer;
+		float: left;
+		list-style: none;
+	}
+	#icons span.ui-icon {
+		float: left;
+		margin: 0 4px;
+	}
+	.fakewindowcontain .ui-widget-overlay {
+		position: absolute;
+	}
+	select {
+		width: 200px;
+	}
+	</style>
+            <script>$( ".button" ).button();</script>
+
+            <script>$( ".datepicker" ).datepicker();</script>
+
+
+    <script>
+    function myFunction(){
+     var x=document.getElementById("mySelect").value;  
+        var y=document.getElementById("inputSupplierName");
+        if(x=="viewAll"){y.style.visibility="hidden";}
+        if(x== "filter"){y.style.visibility="initial";}
+    }
+    window.onload=myFunction;
+    </script>
+    	<link href="jquery-ui-1.11.4.custom/jquery-ui.css" rel="stylesheet">
+
+</head>
+<header class="masthead" role="banner">
+
+    </header>
+    
+    
+<body>
+<div id="outputTableTwo"></div>
+<form id="myFormTwo"action="dbTwo.php" method="post">
+		<fieldset>
+			<legend>Query Items Database by Price</legend>
+			<label>Search by Price</label>
+			            <select name="operationOne">
+                        <option value="lessThan">Less Than</option>
+                        <option value="greaterThan">Greater Than</option>
+                        <option value="equalTo">Equal To</option>
+                        </select>
+            
+            <input type="text"
+                       name="searchPrice" placeholder="Enter Price"/> 
+                   
+			
+			<p>
+			
+                <input type="submit" value="Submit" class="button" />
+			</p>	
+		</fieldset>
+		</form>
+<br>
+<form id="myFormThree"action="dbTwo.php" method="post">
+<fieldset class="fieldsetTwo">
+    <legend>Query Items Database by Quantity</legend>
+<label>Search by Quantity</label>
+                 <select name="operationTwo">
+                        <option value="lessThan">Less Than</option>
+                        <option value="greaterThan">Greater Than</option>
+                        <option value="equalTo">Equal To</option>
+                            </select>
+                 <input type="text" name="searchQuantity" placeholder="Enter Quantity"/>
+			<br>
+    <p>
+			
+                <input type="submit" value="Submit" class="button"/>
+			</p>	
+    </fieldset></form>
+    <br>
+    <form id="myFormFour"action="dbTwo.php" method="post">
+<fieldset>
+    <legend>Obtain Supplier Information of Item</legend>
+             <select name="operationThree" id="mySelect" onchange="myFunction()">
+                        <option value="viewAll" selected>View All Suppliers</option>
+                        <option value="filter">Look up By Item Name</option>
+                            </select>
+                 <input type="text" id="inputSupplierName" name="searchSupplier" placeholder="Enter Item Name"/>
+			<br>
+    <p>
+			
+                <input type="submit" value="Submit" class="button"/>
+
+			</p>	
+    </fieldset></form>
+    <br>
+        <form id="myFormFive" action="dbTwo.php" method="post">
+<fieldset class="fieldsetFour">
+    <legend>Obtain Transactions Information</legend>
+                        <input type="radio" name="transactions" value="viewAll">View All Transactions</option>
+                        <input type="radio" name = "transactions"  value="purchases">Purchases</option>
+                        <input type= "radio" name="transactions"  value="returns">Returns</option>
+                    
+			<br>
+    <p>
+			
+                <input type="submit" value="Submit" class="button"/>
+
+			</p>	
+    </fieldset></form>
+<br>
+        <form id="getEarningsForm" action="getEarnings.php" method="post">
+<fieldset class="fieldsetFour">
+    <legend>Earnings Information</legend>
+    <label>From:</label> <input class="datepicker" type="text" name="fromDate"> 
+      <label>To:</label> <input class="datepicker" type="text" name="toDate"> 
+			<br>
+    <p>
+			
+                <input type="submit" value="Submit" class="button"/>
+
+			</p>	
+    </fieldset></form>   
+
+
+</body>
